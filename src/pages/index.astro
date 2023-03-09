@@ -10,54 +10,40 @@ const posts = (await getCollection('blog')).sort(
 const last_posts = posts.slice(0, 3);
 ---
 
-<BaseLayout>
+<BaseLayout> 
+  <div class="text-xl py-1" >那就不要留，时光一过不再有 👋 </div>
 
-    <div class="pb-12 mt-5">
-      <div class="text-xl py-1">Hey there 👋</div>
-      <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-      <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
-      <div class="py-2">
-        <text class="text-lg">
-          I made this template for everyone who needs to create a personal website easily and quickly. This template includes Project Section, CV Section, Store, Paginated Blog, RSS Feed, SEO Friendly, Responsive Desing and 29 Visual themes. I hope you find it useful!
-          </text
-        >
-      </div>
-      <div class="mt-8">
-        <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-        <a href="https://github.com/manuelernestog/astro-modern-personal-website" target="_blank" class="btn btn-outline ml-5"> Get This template</a>
-      </div>
-    </div>
+  <div class="pb-12 mt-5">
+    <div class="text-5xl font-bold">I'm tulvgengenr </div>
+    <br/>
+    <ul class="list-disc md:columns-3 columns-3 mx-6 gap-1 mb-1 ">
+      <li>程序猿🐒</li>
+      <li>坚定的实用主义者👨‍💻</li>
+      <li>狂热的美食探店人🍰</li>
+      <li>日常口胡的辩论屑🙊</li>
+      <li>酷爱悬疑电影🎬</li>
+      <li>阿瓦隆影帝👺</li>
+      <li>云顶之弈钻石守门员😈</li>
+      <li>偶尔捡起来的摄影小白📸</li>
+      <li>喜欢旅行🚶</li>
+    </ul>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">最近的项目 </div>
+  </div>
+  <HorizontalCard
+    title="SCOW"
+    img="/scow.svg"
+    desc="SCOW是一个面向超算使用员和管理员的、基于Web的超算门户(portal)和管理系统(mis)。本人主要负责跨集群和跨中心文件传输模块的设计、实现和优化。这也是我的本科毕业设计。"
+    url="https://github.com/PKUHPC/SCOW"
+    badge="项目成员"
+  />
+  <div class="divider my-0"></div>
+  <br/>
 
     <div>
-      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
-    </div>
-
-    <HorizontalCard
-      title="Demo Project 1"
-      img="/post_img.webp"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      url="#"
-      badge="NEW"
-    />
-    <div class="divider my-0"></div>
-    <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-    <div class="divider my-0"></div>
-    <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
-
-    <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+      <div class="text-3xl w-full font-bold mb-5 mt-10">最近的博客</div>
     </div>
 
     {
