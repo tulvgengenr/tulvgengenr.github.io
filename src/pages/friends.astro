@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";   
+import Card from "../components/Card.astro";
+---
+<BaseLayout title = "Friends">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">友链</div>
+		<text>欢迎加入友链，联系方式：<a href="mailto:lijunzhe@hnu.edu.cn">lijunzhe@hnu.edu.cn</a> </text>
+  </div>
+
+	<Card 
+		title="Zi'an Li"
+		img="/zian-0427.png"
+		url="https://zian-0427.github.io"
+		tags={["AI", "图神经网络"]}
+	/>
+	
+
+</BaseLayout>

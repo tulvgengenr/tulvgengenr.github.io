@@ -12,6 +12,10 @@ const { page } = Astro.props;
 ---
 
 <BaseLayout title="Blog">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">博客</div>
+  </div>
+
   <ul>
     {
       page.data.map((post) => (
