@@ -11,7 +11,7 @@ heroImage: "/linux-bash.jpg"
 ## 简介linux文件系统
 
 图by@[罗罗的游戏](https://www.zhihu.com/people/luozhiwen)
-![file-system](/public/linux-file.jpg)
+![file-system](../../../public/linux-file.jpg)
 
 主目录：/root、/home/username
 
