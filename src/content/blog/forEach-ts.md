@@ -1,7 +1,7 @@
 ---
 title: "为什么forEach不支持async/await"
-description: "想同时对Array中的每个元素执行异步函数，使用forEach+async/await为什么错误？应该如何编写？"
-pubData: "April 08 2023"
+description: "使用forEach对array中的每个元素执行异步函数，为什么错误？正确编写方式是什么？"
+pubDate: "April 08 2023"
 heroImage: "/ts.png"
 ---
 
